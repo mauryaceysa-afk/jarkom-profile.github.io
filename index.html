@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nama Kelompok | STBI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=" /css/style.css">
+</head>
+<body>
+
+<!--
+    ================ PETA WEBSITE KITA ================
+    1. HEADER   -> logo + menu navigasi
+    2. HERO     -> nama kelompok (yang pertama dilihat orang)
+    3. PENYELENGGARA -> logo penyelenggara
+    4. POSTER   -> poster STBI (wajib)
+    5. TENTANG  -> filosofi nama kelompok
+    6. TIM      -> foto bersama + daftar nama
+    7. FOOTER   -> penutup
+    ===================================================
+
+    CARA MENGISI GAMBAR:
+    Setiap kotak bergaris putus-putus (class "slot") adalah tempat gambar.
+    Ganti isi <div class="slot"> ... </div> dengan:
+      <img src="gambar/nama-file.png" alt="deskripsi gambar">
+-->
+
+<a class="lewati" href="#konten">Lewati ke konten</a>
+
+<!-- 1. HEADER -->
+<header class="header">
+  <div class="wadah header__isi">
+    <a class="header__logo" href="#hero" aria-label="Beranda">
+      <span class="slot slot--logo"><img src="/assets/logo/jarkom.png" alt="jarkom-icon"></span>
+      <span class="header__nama">JarKom</span>
+    </a>
+
+    <nav class="nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#penyelenggara">Penyelenggara</a></li>
+        <li><a href="#poster">Poster</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#tim">Tim</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="konten">
+
+  <!-- 2. HERO -->
+  <section class="hero" id="hero">
+    <div class="wadah hero__isi">
+      <div class="hero__teks">
+        <p class="hero__sub">Kelompok peserta STBI</p>
+        <h1 class="hero__judul">Jaringan<br>Komputer</h1>
+        <p class="hero__ringkas">Satu kalimat singkat tentang kelompok kami dan apa yang kami kerjakan di STBI.</p>
+        <a class="tombol" href="#poster">Lihat poster</a>
+      </div>
+
+      <!-- SLOT: ikon kelompok (ukuran besar) -->
+      <div class="slot slot--ikon" role="img" aria-label="Tempat ikon kelompok">
+        <img src="/assets/logo/jarkom.png" alt="icon_jarkom" style="background-color: #1f3a31;">
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PENYELENGGARA -->
+  <section class="bagian" id="penyelenggara">
+    <div class="wadah">
+      <h2 class="bagian__judul">Penyelenggara</h2>
+      <p class="bagian__ket" style="margin-bottom: 12px;">Kegiatan <strong>ITB</strong> ini diselenggarakan oleh:</p>
+      <p style="max-width: 1080px; text-align: justify; margin-top: 12px;"><strong>HIMTIKA (Himpunan Mahasiswa Informatika UNSIKA)</strong> merupakan wadah organisasi kemahasiswaan tingkat program studi di Fakultas Ilmu Komputer, Universitas Singaperbangsa Karawang. HIMTIKA berdiri pada 16 Oktober 2017 dan berfokus pada pengembangan hardskill, softskill, serta jiwa kepemimpinan mahasiswa di bidang teknologi dan informasi.</p>
+
+      <ul class="logo-deret">
+        <!-- SLOT: tambah atau kurangi <li> sesuai jumlah penyelenggara -->
+        <li><div class="slot slot--penyelenggara"><img src="/assets/logo/himtika.png" alt="himtika-icon"></div></li>
+        <li><div class="slot slot--penyelenggara"><img src="/assets/logo/logo_itb.png" alt="itb-icon"></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. POSTER -->
+  <section class="bagian bagian--gelap" id="poster">
+    <div class="wadah poster">
+      <div class="poster__teks">
+        <h2 class="bagian__judul">Poster STBI</h2>
+        <p>Poster karya kelompok kami untuk STBI. Tulis satu atau dua kalimat tentang pesan utama poster di sini.</p>
+        <!-- Ganti href dengan nama file poster resolusi tinggi -->
+        <a class="tombol tombol--terang" href="/assets/poster/poster-kelompok.jpeg" download>Unduh poster</a>
+      </div>
+
+      <!-- SLOT: poster (rasio potret) -->
+      <figure class="poster__gambar">
+        <div class="slot slot--poster"><img src="/assets/poster/poster-kelompok.jpeg" alt="poster-jarkom" style="border-radius: 15px;"></div>
+        <figcaption>Poster STBI, Jaringan Komputer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5. TENTANG -->
+  <section class="bagian" id="tentang">
+    <div class="wadah tentang">
+      <h2 class="bagian__judul">Arti nama kami</h2>
+      <div class="tentang__isi">
+        <p>Jelaskan asal-usul nama kelompok: dari mana kata itu berasal dan mengapa kalian memilihnya.</p>
+        <p>Jelaskan filosofi di baliknya, dan bagaimana ikon kelompok menggambarkan filosofi tersebut.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TIM -->
+  <section class="bagian bagian--abu" id="tim">
+    <div class="wadah">
+      <h2 class="bagian__judul">Tim kami</h2>
+
+      <!-- SLOT: foto bersama -->
+      <figure class="tim__foto">
+        <div class="slot slot--foto"><img src="/assets/foto-tim/foto_tim.jpeg" alt="foto-kelompok" style="border-radius: 15px;"></div>
+      </figure>
+
+      <!-- Tambah atau kurangi <li> sesuai jumlah anggota -->
+      <ul class="tim__daftar">
+        <li><strong>Andika Bagas</strong><span>Pembimbing</span></li>
+        <li><strong>Adriansyah Pratama P.</strong><span>Ketua</span></li>
+        <!-- 1. Bayu Kresna Mukti
+2. Muhamad Fudhail Farhan 
+3. ceysa maurya febryatinur
+4. Muhammad Tagqi Miftahul F -->
+        <li><strong>Muhammad Fudhail Farhan</strong><span>Anggota</span></li>
+        <li><strong>Ceysa Maurya Febryatinur</strong><span>Anggota</span></li>
+        <li><strong>Muhammad Tagki Miftahul F.</strong><span>Anggota</span></li>
+        <li><strong>Bayu Kresna Mukti</strong><span>Anggota</span></li>
+        <li><strong>Alifia Nur Rahmawati</strong><span>Anggota</span></li>  
+        <li><strong>Arfa Pradiepta</strong><span>Anggota</span></li>
+        <li><strong>Ganti Eka Rahmadini</strong><span>Anggota</span></li>
+        <li><strong>Nama Anggota 6</strong><span>Anggota</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- 7. FOOTER -->
+<footer class="footer">
+  <div class="wadah footer__isi">
+    <p class="footer__nama">Nama Kelompok</p>
+    <p>Mata kuliah / kelas / institusi</p>
+    <p class="footer__hak">&copy; 2026 Nama Kelompok. Dibuat untuk STBI.</p>
+  </div>
+</footer>
+
+</body>
+</html>
